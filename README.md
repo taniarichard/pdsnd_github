@@ -9,7 +9,7 @@ The project aims to explore the BikeShare network data in three cities: Chicago,
 User's input is required to choose the city and to filter or not by month and day of the week.
 Using descriptive statistics methods, various gender, time and place related aspects of the network are analyzed:
 - the most frequent times of travel
-- the most popular stations and trip
+- the most popular stations and to/from combinations
 - the total and average trip duration
 - user's gender and age distribution
 
