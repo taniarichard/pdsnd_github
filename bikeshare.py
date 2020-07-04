@@ -151,8 +151,8 @@ def station_stats(df):
     print ('Number of rides started here:\t\t\t{}'.format(start_times_used))
 
     #getting the percentage of rides that started on the most used start station:
-    precentage_common_start = (start_times_used / total_rides)*100
-    print('Percentage of rides started here:\t\t', round(precentage_common_start,1),'%' )
+    precentage_common_start = round((start_times_used / total_rides)*100,1)
+    print('Percentage of rides started here:\t\t{}%'.format(precentage_common_start))
 
 
     # TO DO: display most commonly used end station
