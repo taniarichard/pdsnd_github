@@ -141,10 +141,10 @@ def station_stats(df):
     #getting the total of rides in the filtered data set:
     total_rides = len(df.index)
     print('Total rides:\t{}\n'.format(total_rides))
-    
+
     #getting the most used start station:
     common_start_station = df['Start Station'].mode()[0]
-    print('Most common start station:\t\t\t',common_start_station)
+    print('Most common start station:\t\t\t{}'.format(common_start_station))
 
     #getting the number of rides that started at the most used start station:
     start_times_used = df['Start Station'].value_counts().max()
