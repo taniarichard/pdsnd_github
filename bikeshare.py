@@ -148,7 +148,7 @@ def station_stats(df):
 
     #getting the number of rides that started at the most used start station:
     start_times_used = df['Start Station'].value_counts().max()
-    print ('Number of rides started here:\t\t\t',start_times_used)
+    print ('Number of rides started here:\t\t\t{}'.format(start_times_used))
 
     #getting the percentage of rides that started on the most used start station:
     precentage_common_start = (start_times_used / total_rides)*100
