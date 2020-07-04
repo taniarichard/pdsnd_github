@@ -92,8 +92,8 @@ def load_data(city, month, day):
 
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
-    #df['day_of_week'] = df['Start Time'].dt.weekday_name
-    df['day_of_week'] = df['Start Time'].dt.day_name
+    df['day_of_week'] = df['Start Time'].dt.weekday_name
+
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
@@ -118,11 +118,13 @@ def time_stats(df):
     # TO DO: display the most common month
     #getting the month name based on its index using the calendar module:
     common_month = calendar.month_name[df['month'].mode()[0]]
-    print("\nMost common ride month:\t", common_month)    
+    print("\nMost common ride month:\t{}".format(common_month))
 
     # TO DO: display the most common day of week
     common_day = df['day_of_week'].mode()[0]
     print("Most common ride day:\t", common_day)
+    #common_day = df['day_of_week'].calendar.day_name[calendar.weekday()].title().mode()[0]
+    #print("Most common ride day:\t", common_day)
 
     # TO DO: display the most common start hour
     common_start_hour = df['Start Time'].mode()[0]
