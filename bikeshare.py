@@ -162,7 +162,7 @@ def station_stats(df):
 
     #getting the number of rides that ended at the most used end station:
     end_times_used = df['End Station'].value_counts().max()
-    print ('Number of rides that ended here:\t\t',end_times_used)
+    print ('Number of rides that ended here:\t\t{}'.format(end_times_used))
 
     #getting the percentage of rides that ended at the most used end station:
     precentage_common_end = (end_times_used / total_rides)*100
