@@ -158,7 +158,7 @@ def station_stats(df):
     # TO DO: display most commonly used end station
     #getting the most used end station:
     common_end_station = df['End Station'].mode()[0]
-    print('\nMost common end station:\t\t\t', common_end_station)
+    print('\nMost common end station:\t\t\t{}'.format(common_end_station))
 
     #getting the number of rides that ended at the most used end station:
     end_times_used = df['End Station'].value_counts().max()
