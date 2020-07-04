@@ -174,7 +174,7 @@ def station_stats(df):
 
     #getting the most used to/from station combination:
     common_from_to = df['From / To'].mode()[0]
-    print("\nMost commont to/from combination:\t\t", common_from_to)
+    print("\nMost commont to/from combination:\t\t{}".format(common_from_to))
 
     #getting the number of rides with this to/from station combination:
     combo_times_used = df['From / To'].value_counts().max()
