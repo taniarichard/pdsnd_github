@@ -123,13 +123,11 @@ def time_stats(df):
     # TO DO: display the most common day of week
     common_day = df['day_of_week'].mode()[0]
     print("Most common ride day:\t{}".format(common_day))
-    #common_day = df['day_of_week'].calendar.day_name[calendar.weekday()].title().mode()[0]
-    #print("Most common ride day:\t", common_day)
 
     # TO DO: display the most common start hour
-    common_start_hour = df['Start Time'].mode()[0]
     #The output is formatted to "HH:MM" with .strftime("%H:%M")
-    print("Most common start time:\t",common_start_hour.strftime("%H:%M"))
+    common_start_hour = df['Start Time'].mode()[0].strftime("%H:%M")
+    print("Most common start time:\t{}".format(common_start_hour))
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
