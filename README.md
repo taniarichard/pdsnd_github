@@ -5,7 +5,14 @@ July 4th, 2020
 BikeShare Data Analysis
 
 ### Description
-The project aims to explore the BikeShare network data in three cities: Chicago, Washington and the New York City. Using descriptive statistics methods, various gender, time and place related aspects of the network are analyzed.
+The project aims to explore the BikeShare network data in three cities: Chicago, Washington and the New York City.
+User's input is required to choose the city and to filter or not by month and day of the week.
+Using descriptive statistics methods, various gender, time and place related aspects of the network are analyzed:
+- the most frequent times of travel
+- the most popular stations and trip
+- the total and average trip duration
+- user's gender and age distribution
+
 The project uses a Python 3 script with time, datetime and calendar modules, as well as numpy and pandas packages.  
 
 ### Files used
