@@ -279,7 +279,7 @@ def user_stats(df):
 
         #getting the youngest rider's age:
         youngest_rider = date.today().year - int(max_year)
-        print('The youngest rider\'s age:\t', youngest_rider)
+        print('The youngest rider\'s age:\t{}'.format(youngest_rider))
 
         #getting the average rider age:
         average_age = date.today().year - int(mode_year)
