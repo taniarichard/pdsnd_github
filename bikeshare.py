@@ -262,9 +262,9 @@ def user_stats(df):
     #Birth Year data is not available for all cities, so we use an if statement to inform the user when this data is not available:
     if 'Birth Year' in df:
         #getting the earlies birth year:
-        min_year = df['Birth Year'].min()
-        print('\nThe earliest birth year:\t', int(min_year))
-
+        min_year = int(df['Birth Year'].min())
+        print('\nThe earliest birth year:\t{}'.format(min_year))
+        
         #getting the latest birth year:
         max_year = df['Birth Year'].max()
         print('The most recent birth year:\t', int(max_year))
