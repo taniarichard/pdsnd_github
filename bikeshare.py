@@ -267,11 +267,11 @@ def user_stats(df):
 
         #getting the latest birth year:
         max_year = int(df['Birth Year'].max())
-        print('The most recent birth year:\t{}'.format(max_year)) 
+        print('The most recent birth year:\t{}'.format(max_year))
 
         #getting the most common birth year:
-        mode_year = df['Birth Year'].mode()
-        print('The most common birth year:\t', int(mode_year))
+        mode_year = int(df['Birth Year'].mode())
+        print('The most common birth year:\t{}'.format(mode_year))
 
         #getting the oldest rider's age:
         oldest_rider = date.today().year - int(min_year)
