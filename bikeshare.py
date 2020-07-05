@@ -264,10 +264,10 @@ def user_stats(df):
         #getting the earlies birth year:
         min_year = int(df['Birth Year'].min())
         print('\nThe earliest birth year:\t{}'.format(min_year))
-        
+
         #getting the latest birth year:
-        max_year = df['Birth Year'].max()
-        print('The most recent birth year:\t', int(max_year))
+        max_year = int(df['Birth Year'].max())
+        print('The most recent birth year:\t{}'.format(max_year)) 
 
         #getting the most common birth year:
         mode_year = df['Birth Year'].mode()
