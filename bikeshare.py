@@ -283,7 +283,7 @@ def user_stats(df):
 
         #getting the average rider age:
         average_age = date.today().year - int(mode_year)
-        print('The average rider age is:\t', average_age)
+        print('The average rider age is:\t{}'.format(average_age))
     else:
         print('No birth year information is available')
 
