@@ -182,8 +182,8 @@ def station_stats(df):
     print("Number of rides with this combination:\t\t{}".format(combo_times_used))
 
     #getting the percentage of rides with this to/from station combination:
-    precentage_combo = round(combo_times_used / total_rides)*100,2)
-    print("Percentage of rides with this combination:\t{}%".format(precentage_combo)
+    precentage_combo = round((combo_times_used / total_rides)*100,2)
+    print("Percentage of rides with this combination:\t{}%".format(precentage_combo))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
