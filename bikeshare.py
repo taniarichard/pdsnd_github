@@ -168,6 +168,7 @@ def station_stats(df):
     precentage_common_end = round((end_times_used / total_rides)*100,1)
     print('Percentage of rides that ended here:\t\t{}%'.format(precentage_common_end))
 
+
     # TO DO: display most frequent combination of start station and end station trip
     #creating a column in the data frame with a to/from station combination:
     df['From / To'] = df['Start Station'].str.cat(df['End Station'], sep=' => ')
@@ -178,11 +179,11 @@ def station_stats(df):
 
     #getting the number of rides with this to/from station combination:
     combo_times_used = df['From / To'].value_counts().max()
-    print("Number of rides with this combination:\t\t", combo_times_used)
+    print("Number of rides with this combination:\t\t{}".format(combo_times_used))
 
     #getting the percentage of rides with this to/from station combination:
-    precentage_combo = (combo_times_used / total_rides)*100
-    print("Percentage of rides with this combination:\t", round(precentage_combo,2),'%' )
+    precentage_combo = round(combo_times_used / total_rides)*100,2)
+    print("Percentage of rides with this combination:\t{}%".format(precentage_combo)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
